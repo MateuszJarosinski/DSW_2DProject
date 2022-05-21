@@ -273,6 +273,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -323,19 +324,19 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 1
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -456,7 +457,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -13, y: -9}
+        - {x: -13, y: -26}
+        - {x: 13, y: -26}
+        - {x: 13, y: -9}
       tessellationDetail: 0
       bones: []
       spriteID: 7ff74cce1bffd1940b0067eab1029165
@@ -498,7 +503,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -13, y: -13}
+        - {x: -13, y: -33}
+        - {x: 13, y: -33}
+        - {x: 13, y: -13}
       tessellationDetail: 0
       bones: []
       spriteID: efe36c6e40d0485469a22ee3a8c43d63
@@ -519,7 +528,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -1}
+        - {x: -13, y: -1}
+        - {x: -13, y: -19}
+        - {x: 13, y: -19}
+        - {x: 13, y: -1}
+        - {x: 6, y: -1}
       tessellationDetail: 0
       bones: []
       spriteID: 9242e74a03e5ca44c988038d7bd535ef
@@ -603,7 +618,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 8, y: -3.5}
+        - {x: -4, y: -3.5}
+        - {x: -15, y: -3.5}
+        - {x: -15, y: -20.5}
+        - {x: 15, y: -20.5}
+        - {x: 15, y: -3.5}
       tessellationDetail: 0
       bones: []
       spriteID: dc492ddb4e760a642b4b66004e7d8035
@@ -622,9 +643,14 @@ TextureImporter:
         height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 23}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -13, y: -3}
+        - {x: -13, y: -20}
+        - {x: 13, y: -20}
+        - {x: 13, y: -12}
+        - {x: 13, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 2e60439295e4e7644ad0a07342ad1888
@@ -645,7 +671,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 5.5}
+        - {x: -15, y: 5.5}
+        - {x: -15, y: -14.5}
+        - {x: 15, y: -14.5}
+        - {x: 15, y: 5.5}
+        - {x: 8, y: 5.5}
       tessellationDetail: 0
       bones: []
       spriteID: ffaec41c67a3faf449914f854eb8bc02
@@ -708,7 +740,15 @@ TextureImporter:
       pivot: {x: 0.44592682, y: -0.0006246567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 13.5, y: 1}
+        - {x: -13.5, y: 1}
+        - {x: -13.5, y: -5}
+        - {x: -7.5, y: -16}
+        - {x: 4.5, y: -16}
+        - {x: 11.5, y: -3}
+        - {x: 13.5, y: 0}
+        - {x: 13.5, y: -1}
       tessellationDetail: 0
       bones: []
       spriteID: dbe5760aa2865644ea13d61dd3f342b3
@@ -1002,7 +1042,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 11.5, y: -11.5}
+        - {x: 6.5, y: -11.5}
+        - {x: 2.5, y: -11.5}
+        - {x: -11.5, y: -11.5}
+        - {x: -18.5, y: -11.5}
+        - {x: -18.5, y: -36.5}
+        - {x: 18.5, y: -36.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 15.5, y: -11.5}
+      - - {x: 1.5, y: -11.5}
+        - {x: 1.5, y: -10.5}
+        - {x: 2.5, y: -10.5}
+        - {x: 2.5, y: -11.5}
+      - - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: -11.5}
+        - {x: 18.5, y: -12.5}
       tessellationDetail: 0
       bones: []
       spriteID: 70d74dd78af59354299b24c2f2e529e9
@@ -1023,7 +1080,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -11, y: -3}
+        - {x: -11, y: -19}
+        - {x: 11, y: -19}
+        - {x: 11, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 952c5d3ac754321439bb699de039407e
@@ -1044,7 +1105,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -11.5}
+        - {x: -16, y: -38.5}
+        - {x: 16, y: -38.5}
+        - {x: 16, y: -11.5}
       tessellationDetail: 0
       bones: []
       spriteID: 538b433b960d0524cae73e5731375a47
@@ -1065,7 +1130,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -10, y: -1.5}
+        - {x: -16, y: -1.5}
+        - {x: -16, y: -28.5}
+        - {x: 16, y: -28.5}
+        - {x: 16, y: -1.5}
+        - {x: 6, y: -1.5}
       tessellationDetail: 0
       bones: []
       spriteID: 3fbe655b99eb4574dbf0ad8ac7afa291
@@ -1107,7 +1178,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -24, y: 36}
+        - {x: -47, y: 16}
+        - {x: -47, y: -15}
+        - {x: -34, y: -28}
+        - {x: -21, y: -36}
+        - {x: 27, y: -36}
+        - {x: 47, y: -24}
+        - {x: 47, y: 17}
+        - {x: 39, y: 36}
       tessellationDetail: 0
       bones: []
       spriteID: 56fdc1b340834d34f851b10cadc9b613
@@ -1357,6 +1437,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TX Props Well: 21300164
+      TX Props Chest Opened: 21300040
+      TX Props Pot B: 21300092
+      TX Props Barrel: 21300066
+      TX Props Rune Pillar X3: 21300058
+      TX Props Altar Rune 3: 21300148
+      TX Props Wooden Gate Opened: 21300160
+      TX Props Rune Pillar Broken: 21300060
+      TX Props Crate Small: 21300038
+      TX Props Pot C: 21300094
+      TX Props Stone T1: 21300102
+      TX Props Stone T7: 21300162
+      TX Props Pot A: 21300090
+      TX Props Stone Cube: 21300130
+      TX Props Pillar Broken: 21300120
+      TX Props Stone Bench S: 21300096
+      TX Props Altar: 21300142
+      TX Props Stone T2: 21300104
+      TX Props Road Sign W: 21300088
+      TX Props Pillar: 21300118
+      TX Props Stone T3: 21300106
+      TX Props Brick T1: 21300152
+      TX Props Altar Rune 1: 21300144
+      TX Props Crate: 21300034
+      TX Props Stone Bench E: 21300100
+      TX Props Rune Pillar Broken Glow: 21300064
+      TX Props Road Sign E: 21300086
+      TX Props Wooden Gate: 21300158
+      TX Props Rune Pillar X2 Glow: 21300044
+      TX Props Altar Rune 2: 21300146
+      TX Props Cube: 21300036
+      TX Props Stone Coffin V: 21300076
+      TX Props Gravestone B: 21300070
+      TX Props Gravestone C: 21300072
+      TX Props Rune Pillar X2: 21300042
+      TX Props Stone T6: 21300112
+      TX Props Altar Rune 4: 21300150
+      TX Props Stone Lantern: 21300116
+      TX Props Chest: 21300000
+      TX Props Stone Coffin H: 21300078
+      TX Props Statue: 21300114
+      TX Props Brick T3: 21300156
+      TX Props Stone T5: 21300110
+      TX Props Stone Bench W: 21300098
+      TX Props Stone T4: 21300108
+      TX Props Brick T2: 21300154
+      TX Props Rune Pillar X3 Glow: 21300062
+      TX Props Gravestone A: 21300068
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
